@@ -2,11 +2,8 @@
 var mountains = [
     { name: "Kilimanjaro", height: 19341 },
     { name: "Everest", height: 29029 },
-    { name: "Denali", height: 20310 }
+    { name: "Denali", height: 20310 },
 ];
-/* Declare a function called findNameOfTallestMountain. It takes one parameter, an
-array of Mountain objects. It returns a string, the name of the tallest mountain in the
-given array  */
 var findNameOfTallestMountain = function (array) {
     var max = array[0];
     for (var _i = 0, array_1 = array; _i < array_1.length; _i++) {
@@ -17,29 +14,28 @@ var findNameOfTallestMountain = function (array) {
     }
     return "Tallest Mountain: " + max.name;
 };
-var tallest = (findNameOfTallestMountain(mountains));
+var tallest = findNameOfTallestMountain(mountains);
 console.log(tallest);
 var products = [
     { name: "basketball", price: 8 },
     { name: "football", price: 7 },
     { name: "baseball", price: 3 },
-    { name: "softball", price: 2 }
+    { name: "softball", price: 2 },
 ];
-//finding the average price
 var calcAverageProductPrice = function (array) {
     var sum = 0;
     for (var _i = 0, array_2 = array; _i < array_2.length; _i++) {
         var i = array_2[_i];
         sum += i.price;
     }
-    return (sum / array.length);
+    return sum / array.length;
 };
 var avgScore = calcAverageProductPrice(products);
 console.log("Average score:", avgScore);
 var inventory = [
-    { name: "motor", price: 10.00, quantity: 10 },
-    { name: "sensor", price: 12.50, quantity: 4 },
-    { name: "LED", price: 1, quantity: 20 }
+    { name: "motor", price: 10.0, quantity: 10 },
+    { name: "sensor", price: 12.5, quantity: 4 },
+    { name: "LED", price: 1, quantity: 20 },
 ];
 var calcInventoryValue = function (array) {
     var subtotal = 0;
