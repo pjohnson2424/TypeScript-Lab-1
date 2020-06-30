@@ -41,8 +41,8 @@ const calcAverageProductPrice = (array: Product[]) => {
   return sum / array.length;
 };
 
-let avgScore = calcAverageProductPrice(products);
-console.log(`Average score:`, avgScore);
+let avgPrice = calcAverageProductPrice(products);
+console.log(`Average price:`, avgPrice);
 
 interface InventoryItem extends Product {
   quantity: number;
